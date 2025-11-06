@@ -38,12 +38,14 @@ gritcon/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/bruhngl0/gritcon.git
 cd gritcon
 ```
 
 2. Install dependencies:
+
 ```bash
 # Install frontend dependencies
 bun install
@@ -54,6 +56,7 @@ go mod download
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp apps/backend/.env.example apps/backend/.env
 # Edit apps/backend/.env with your configuration
@@ -62,12 +65,14 @@ cp apps/backend/.env.example apps/backend/.env
 4. Start the database and Redis.
 
 5. Run database migrations:
+
 ```bash
 cd apps/backend
 task migrations:up
 ```
 
 6. Start the development server:
+
 ```bash
 # From root directory
 bun dev
@@ -102,12 +107,12 @@ bun lint               # Lint all packages
 
 The backend uses environment variables prefixed with `gritcon_`. Key variables include:
 
-- `gritcon_DATABASE_*` - PostgreSQL connection settings
-- `gritcon_SERVER_*` - Server configuration
-- `gritcon_AUTH_*` - Authentication settings
-- `gritcon_REDIS_*` - Redis connection
-- `gritcon_EMAIL_*` - Email service configuration
-- `gritcon_OBSERVABILITY_*` - Monitoring settings
+- `GRITCON_DATABASE_*` - PostgreSQL connection settings
+- `GRITCON_SERVER_*` - Server configuration
+- `GRITCON_AUTH_*` - Authentication settings
+- `GRITCON_REDIS_*` - Redis connection
+- `GRITCON_EMAIL_*` - Email service configuration
+- `GRITCON_OBSERVABILITY_*` - Monitoring settings
 
 See `apps/backend/.env.example` for a complete list.
 
