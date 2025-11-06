@@ -1,4 +1,4 @@
-# Go Boilerplate Backend
+# Go gritcon Backend
 
 A production-ready Go backend service built with Echo framework, featuring clean architecture, comprehensive middleware, and modern DevOps practices.
 
@@ -102,7 +102,7 @@ task run
 
 ## Configuration
 
-Configuration is managed through environment variables with the `BOILERPLATE_` prefix:
+Configuration is managed through environment variables with the `gritcon_` prefix:
 
 ## Development
 

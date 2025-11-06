@@ -35,6 +35,14 @@ func NewLoggerService(cfg *config.ObservabilityConfig) *LoggerService {
 		newrelic.ConfigDistributedTracerEnabled(cfg.NewRelic.DistributedTracingEnabled),
 	)
 
+	//========================================================================================================================
+	// *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*  *URVASHI*
+	//========================================================================================================================
+
+	// This codeblock is for you urvashi, every time i get bugs in my code and get frustrated, i come back to this
+	// file and think of you, your body scent, and the peace you bring with you. I feel better, i take a long gasp smile and
+	// finally fix bugs. thankyou urvashi!!
+
 	// Add debug logging only if explicitly enabled
 	if cfg.NewRelic.DebugLogging {
 		configOptions = append(configOptions, newrelic.ConfigDebugLogger(os.Stdout))

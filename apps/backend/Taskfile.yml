@@ -1,7 +1,7 @@
 version: '3'
 
 vars:
-  BOILERPLATE_DB_DSN: '{{.BOILERPLATE_DB_DSN | default ""}}'
+  gritcon_DB_DSN: '{{.gritcon_DB_DSN | default ""}}'
 
 tasks:
   help:
@@ -42,7 +42,7 @@ tasks:
     deps: [ confirm ]
     cmds:
     - echo 'Running up migrations...'
-    - tern migrate -m ./internal/database/migrations --conn-string {{.BOILERPLATE_DB_DSN}}
+    - tern migrate -m ./internal/database/migrations --conn-string {{.gritcon_DB_DSN}}
 
   tidy:
     desc: format all .go files, and tidy and vendor module dependencies

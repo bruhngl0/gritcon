@@ -1,4 +1,4 @@
-# Go Boilerplate
+# Go gritcon
 
 A production-ready monorepo template for building scalable web applications with Go backend and TypeScript frontend. Built with modern best practices, clean architecture, and comprehensive tooling.
 
@@ -100,20 +100,20 @@ bun lint               # Lint all packages
 
 ### Environment Variables
 
-The backend uses environment variables prefixed with `BOILERPLATE_`. Key variables include:
+The backend uses environment variables prefixed with `gritcon_`. Key variables include:
 
-- `BOILERPLATE_DATABASE_*` - PostgreSQL connection settings
-- `BOILERPLATE_SERVER_*` - Server configuration
-- `BOILERPLATE_AUTH_*` - Authentication settings
-- `BOILERPLATE_REDIS_*` - Redis connection
-- `BOILERPLATE_EMAIL_*` - Email service configuration
-- `BOILERPLATE_OBSERVABILITY_*` - Monitoring settings
+- `gritcon_DATABASE_*` - PostgreSQL connection settings
+- `gritcon_SERVER_*` - Server configuration
+- `gritcon_AUTH_*` - Authentication settings
+- `gritcon_REDIS_*` - Redis connection
+- `gritcon_EMAIL_*` - Email service configuration
+- `gritcon_OBSERVABILITY_*` - Monitoring settings
 
 See `apps/backend/.env.example` for a complete list.
 
 ## Architecture
 
-This boilerplate follows clean architecture principles:
+This gritcon follows clean architecture principles:
 
 - **Handlers**: HTTP request/response handling
 - **Services**: Business logic implementation
